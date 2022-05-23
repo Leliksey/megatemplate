@@ -1,5 +1,6 @@
 window.onload = function() {
-    $(".burger").click(function() {
-        $(".burger").toggleClass("burger__toggle")
-    })
+    $(".burger").on("click", function() {
+        $(this).toggleClass("active");
+        $(".burger__menu").toggleClass("open");
+      })
 }
