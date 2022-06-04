@@ -4,6 +4,8 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $xxl: 1440px;
+$note: 1570px;
+$xxxl: 1920px;
 
 
 @mixin landscape {
@@ -53,6 +55,17 @@ $xxl: 1440px;
     @content;
   }
 }
+@mixin note {
+  @media (min-width: #{$note}) {
+    @content;
+  }
+}
+
+@mixin xxxl {
+  @media (min-width: #{$xxxl}) {
+    @content;
+  }
+}
 
 @mixin max-iph {
   @media (max-width: #{$iph}) {
@@ -85,6 +98,17 @@ $xxl: 1440px;
 }
 @mixin max-xxl {
   @media (max-width: #{$xxl}) {
+    @content;
+  }
+}
+@mixin max-note {
+  @media (max-width: #{$note}) {
+    @content;
+  }
+}
+
+@mixin max-xxxl {
+  @media (max-width: #{$xxxl}) {
     @content;
   }
 }

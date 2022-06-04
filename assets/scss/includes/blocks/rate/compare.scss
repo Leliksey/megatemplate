@@ -1,0 +1,188 @@
+.compare {
+    background: #F0F4F8;
+    padding: 72px 0 64px;
+    @include max-md {
+        padding: 62px 0 60px;
+        background: #fff;
+    }
+    &__content {
+        overflow-x: scroll;
+        @include max-md {
+            padding: 0 3px
+        }
+    }
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(24px + (72 - 24) * ((100vw - 320px) / (1920 - 320)));
+        letter-spacing: -1px;
+        color: #131313;
+    }
+    &__top {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        @include max-md {
+            margin-top: 30px;
+        }
+    }
+    &__name {
+        min-width: 200px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(15px + (24 - 15) * ((100vw - 320px) / (1920 - 320)));
+        color: #131313;
+        @include max-md {
+            min-width: 100px;
+            margin-left: 0;
+        }
+    }
+    &__name_empty {
+        opacity: 0;
+        margin-right: 100px;
+        min-width: 200px !important;
+        
+        @include max-lg {
+            margin-right: 30px;
+        }
+        @include max-md {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @include max-sm {
+            min-width: 130px !important;
+        }
+    }
+    &__line {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 50px;
+        @include max-md {
+            align-items: center;
+            margin-top: 20px;
+        }
+    }
+    &__item_title {
+        min-width: 200px !important;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 143%;
+        letter-spacing: -0.2px;
+        color: #7E868E;
+        margin-right: 100px;
+        @include max-lg {
+            margin-right: 30px;
+        }
+        @include max-md {
+            min-width: 83px;
+            margin-left: 30px;
+            margin-right: 0;
+        }
+        @include max-sm {
+            min-width: 130px !important;
+        }
+    }
+    &__item_title:first-child {
+        margin-left: 0;
+    }
+    &__item_text {
+        min-width: 200px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 143%;
+        letter-spacing: -0.2px;
+        color: #131313;
+        @include max-md {
+            min-width: 100px;
+            margin-left: 0;
+        }
+    }
+    &__subtitle {
+        margin-top: 40px;
+        padding: 25px 20px;
+        background-color: #F5F6F7;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 143%;
+        letter-spacing: -0.2px;
+        color: #131313;
+        @include max-md {
+            margin-top: 18px;
+            padding: 10px 12px;
+        }
+    }
+    &__item_icon {
+        min-width: 200px;
+        width: 100%;
+        text-align: center;
+        @include max-md {
+            min-width: 100px;
+            margin-left: 0;
+        }
+        & img {
+            max-width: 30px;
+            margin: 0 auto;
+            @include max-md {
+                max-width: 20px;
+            }
+        }
+    }
+    &__item_icon_x {
+        position: relative;
+        max-width: 30px;
+        margin: 0 auto;
+        @include max-md {
+            display: none;
+        }
+    }
+    &__icon_question {
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: -10px;
+        right: -25px;
+    }
+    &__bottom {
+        margin: 42px 30px 0;
+        list-style: initial;
+        @include max-md {
+            margin-top: 18px;
+        }
+    }
+    &__bottom_item {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 143%;
+        letter-spacing: -0.2px;
+        color: #131313;
+
+        &:not(:first-child) {
+            margin-top: 35px;
+            @include max-md {
+                margin-top: 18px;
+            }
+        }
+    }
+    &__info {
+        background: #fff;
+        padding: 15px 27px;
+        position: absolute;
+        border-radius: 3px;
+        width: max-content;
+        top: -20px;
+        left: 200%;
+        z-index: 20;
+        display: none;
+    }
+}

@@ -3,7 +3,27 @@
 @import './includes/mixins.scss';
 @import './includes/reset.scss';
 @import './includes/functions.scss';
+
 @import './includes/blocks/footer/footer.scss';
 @import './includes/blocks/header/header.scss';
 @import './includes/blocks/header/burger.scss';
 @import './includes/blocks/main/main.scss';
+@import './includes/blocks/main/reward.scss';
+@import './includes/blocks/main/steps.scss';
+@import './includes/blocks/main/site.scss';
+@import './includes/blocks/main/decision.scss';
+@import './includes/blocks/main/future.scss';
+@import './includes/blocks/main/question.scss';
+@import './includes/blocks/main/support.scss';
+
+@import './includes/blocks/account/registration.scss';
+@import './includes/blocks/account/login.scss';
+
+@import './includes/blocks/rate/rate.scss';
+@import './includes/blocks/rate/develop.scss';
+@import './includes/blocks/rate/request.scss';
+@import './includes/blocks/rate/plan.scss';
+@import './includes/blocks/rate/compare.scss';
+
+@import './includes/blocks/blog/blog.scss';
+

@@ -1,0 +1,157 @@
+.rate {
+    background: linear-gradient(82.95deg, #106CE8 7.29%, rgba(255, 255, 255, 0) 74.16%), #3996F3;
+    @include max-md {
+        background: #fff;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include max-xxl {
+            padding-left: 88px;
+        }
+        @include max-lg {
+            padding-left: 68px;
+        }
+        @include max-md {
+            justify-content: center;
+            padding-left: 0;
+        }
+    }
+    &__text {
+        width: 40%;
+        @include max-xxl {
+            width: 45%;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: calc(27px + (64 - 27) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(29px + (72 - 29) * ((100vw - 320px) / (1920 - 320)));
+        letter-spacing: -1px;
+        color: #FFF;
+        @include max-md {
+            color: #000;
+            text-align: center;
+            padding: 62px 0 30px;
+        }
+    }
+    &__description {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 145%;
+        letter-spacing: -0.2px;
+        color: #FFFFFF;
+        margin-top: 27px;
+        max-width: 607px;
+        @include max-md {
+            display: none;
+        }
+    }
+    &__images {
+        padding: 126px 17px 112px;
+        width: 50%;
+        @include max-xxl {
+            padding: 110px 17px 0;
+        }
+        @include max-lg {
+            padding: 10px 17px;
+        }
+        @include max-md {
+            display: none;
+        }
+    }
+    &__img {
+        position: relative;
+        height: 318px;
+        @include max-note {
+            max-width: 400px;
+        }
+        @include max-xxl {
+            max-width: 300px;
+        }
+        @include max-lg {
+            max-width: 195px;
+            height: 250px;
+        }
+        & img {
+            position: absolute;
+        }
+    }
+    &__tablet {
+        max-width: 464px;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        @include max-lg {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        @include max-md {
+            max-width: 250px;
+        }
+    }
+    &__phone {
+        max-width: 120px;
+        bottom: -20px;
+        left: -70px;
+        z-index: 20;
+        @include max-note {
+            max-width: 100px;
+            bottom: 20px;
+            left: -50px;
+        }
+        @include max-xxl {
+            max-width: 70px;
+            bottom: 100px;
+            left: -40px;
+        }
+        @include max-lg {
+            max-width: 55px;
+            bottom: 45px;
+            left: -30px;
+        }
+    }
+    &__procent {
+        max-width: 310px;
+        top: -80px;
+        left: -185px;
+        z-index: 15;
+        @include max-note {
+            max-width: 290px;
+        }
+        @include max-xxl {
+            max-width: 250px;
+            left: -150px;
+        }
+        @include max-lg {
+            max-width: 140px;
+            left: -85px;
+            top: 10px;
+        }
+    }
+    &__idea {
+        max-width: 368px;
+        bottom: -40px;
+        right: -115px;
+        @include max-note {
+            max-width: 300px;
+            bottom: 50px;
+            right: -225px;
+        }
+        @include max-xxl {
+            max-width: 200px;
+            bottom: 100px;
+            right: -135px;
+        }
+        @include max-lg {
+            max-width: 150px;
+            bottom: 50px;
+            right: -110px;
+        }
+    }
+}

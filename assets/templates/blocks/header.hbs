@@ -1,40 +1,47 @@
 <header class="header">
-  <div class="header__logo">
-    <img src="images/logo.png" alt="logo" />
-  </div>
-  <div class="header__nav">
-    <ul class="header__list">
-      <li class="header__item">
-        <a href="#" class="header__link">Главная</a>
-      </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Тарифы</a>
-      </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Блог</a>
-      </li>
-      <li class="header__item">
-        <a href="#" class="header__link">Партнерам</a>
-      </li>
-    </ul>
-    <button class="burger">
-      <span aria-hidden="true"></span>
-    </button>
-    <div class="burger__menu">
-      <ul class="burger__list">
-        <li><img src="images/logo.png" alt="logo" /></li>
-        <li><a href="#advantages">Главная</a></li>
-        <li><a href="#projects">Тарифы</a></li>
-        <li><a href="#plan">Блог</a></li>
-        <li><a href="#testimonials">Партнерам</a></li>
+  <div class="header__wrap">
+    <a href="/" class="header__logo">
+      <img src="images/logo.png" alt="logo" />
+    </a>
+    <a href="registration.html" class="header__register">Регистрация</a>
+    <div class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">Главная</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Тарифы</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Блог</a>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Партнерам</a>
+        </li>
       </ul>
-    </div>
-    <div class="header__btns">
-      <button
-        class="button header__button header__button_lang"
-        type="button"
-      >En</button>
-      <button class="button header__button" type="button">Вход</button>
+      <button class="burger">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="burger__menu">
+        <ul class="burger__list">
+          <li><img src="images/logo.png" alt="logo" /></li>
+          <li><a href="#advantages">Главная</a></li>
+          <li><a href="#projects">Тарифы</a></li>
+          <li><a href="#plan">Блог</a></li>
+          <li><a href="#testimonials">Партнерам</a></li>
+        </ul>
+      </div>
+      <div class="header__btns">
+        <button
+          class="button header__button header__button_lang"
+          type="button"
+        >En</button>
+        <a href="login.html" class="header__enter">Войти</a>
+        <a href="login.html" class="header__login">Авторизация</a>
+        <a href="registration.html" class="header__login header__login_reg">Регистрация</a>
+        {{!-- <a href="#" class="header__enter">Войти</a> --}}
+        <a href="login.html" class="button header__button" type="button">Вход</a>
+      </div>
     </div>
   </div>
 </header>

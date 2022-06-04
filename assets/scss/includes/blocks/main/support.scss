@@ -1,0 +1,123 @@
+.support {
+    background-color: #f0f4f8;
+    &__title {
+        padding-top: 80px;
+        font-size: calc(27px + (48 - 27) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 55px;
+        color: #131313;
+        text-align: center;
+        font-weight: 700;
+        @include max-md {
+            padding-top: 30px;
+        }
+    }
+    &__content {
+        padding: 60px 0 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include max-xl {
+            padding: 60px 50px 80px;
+        }
+        @include max-md {
+            flex-direction: column-reverse;
+            padding: 11px 15px 30px;
+        }
+    }
+    &__left {
+        @include max-md {
+            width: 100%;
+        }
+    }
+    &__list {
+        @include max-md {
+            margin-top: 23px;
+        }
+    }
+    &__item {
+        @include max-md {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 9px 18px;
+        }
+    }
+    &__item:not(:first-child) {
+        margin-top: 30px;
+        @include max-lg {
+            margin-top: 10px;
+        }
+        @include max-md {
+            margin-top: 10px;
+        }
+    }
+    &__subtitle {
+        font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -1px;
+    }
+    &__text {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 27px;
+        letter-spacing: -1px;
+        color: #000;
+        @include max-lg {
+            margin-top: 5px;
+        }
+        @include max-md {
+            margin-top: 2px;
+        }
+        & a {
+            text-decoration: underline;
+            text-transform: capitalize;
+            color: #3996F3;
+            font-weight: 500;
+            font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (1920 - 320)));
+            line-height: 27px;
+            letter-spacing: -1px;
+        }
+    }
+    &__link {
+    }
+    &__right {
+        @include max-md {
+            margin-top: 11px;
+        }
+    }
+    &__img {
+        margin-left: calc(20px + (237 - 20) * ((100vw - 320px) / (1920 - 320)));
+        max-width: calc(231px + (509 - 231) * ((100vw - 320px) / (1920 - 320)));
+        position: relative;
+        @include max-md {
+            margin-left: auto;
+        }
+    }
+    &__chat1 {
+        max-width: calc(83px + (198 - 83) * ((100vw - 320px) / (1920 - 320)));
+        position: absolute;
+        left: -10px;
+        top: 120px;
+        @include max-xxl {
+            left: -10px;
+        }
+        @include max-md {
+            left: -10px;
+            top: 120px;
+        }
+    }
+    &__chat3 {
+        max-width: calc(83px + (198 - 83) * ((100vw - 320px) / (1920 - 320)));
+        position: absolute;
+        right: -100px;
+        bottom: 62px;
+        @include max-xxl {
+            right: -50px;
+        }
+        @include max-md {
+            right: -30px;
+            bottom: 26px;
+        }
+    }
+}

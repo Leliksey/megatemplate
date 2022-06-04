@@ -74,8 +74,12 @@ module.exports = {
           to: './js/owlcarousel/owl.carousel.min.js'
       },
         {
-          from: './assets/libs/owlcarousel/owl.carousel.min.css',
-          to: './js/owlcarousel/owl.carousel.min.css'
+          from: './assets/libs/owlcarousel/owl.carousel.min.js',
+          to: './js/owlcarousel/owl.carousel.min.js'
+      },
+        {
+          from: './assets/libs/jquery.maskedinput.js',
+          to: './js/jquery.maskedinput.js'
       },
         {
           from: './assets/images',

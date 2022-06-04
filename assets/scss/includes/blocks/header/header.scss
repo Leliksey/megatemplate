@@ -1,17 +1,59 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 27px;
-    padding-left: 88px;
-    background-color: #f5f6f7;
+    width: 100%;
     @include max-md {
-        border-bottom: 1px solid #e7e7e7;
-        padding: 0 0 15px;
+        background-color: #fff;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 27px 48px 27px 88px;
+        background-color: #f5f6f7;
+        @include max-lg {
+            padding: 27px 0 27px 68px;
+        }
+        @include max-md {
+            border-bottom: 1px solid #e7e7e7;
+            margin: 0 15px;
+            padding: 15px 0;
+            background-color: #fff;
+        }
+    }
+    &__login {
+        display: none;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.2px;
+        color: #6F6F6F;
+        text-transform: capitalize;
+        padding: 16px 41px;
+        background: #F5F6F7;
+        border-radius: 3px;
+        @include max-md {
+            display: none !important;
+        }
+        &_reg {
+            display: none;
+        }
+    }
+    &__register {
+        display: none;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.2px;
+        color: #6F6F6F;
+        text-transform: capitalize;
+        padding: 16px 41px;
+        background: #F5F6F7;
+        border-radius: 3px;
     }
     &__nav {
         display: flex;
-        align-items: flex-start;
+        align-items: baseline;
         padding-right: 48px;
         @include max-md {
             justify-content: space-between;
@@ -23,8 +65,12 @@
     &__logo {
         max-width: 196px;
         max-height: 47px;
-        @include max-lg {
+        cursor: pointer;
+        @include max-xl {
             max-width: 150px;
+        }
+        @include max-lg {
+            max-width: 130px;
         }
         @include max-md {
             display: none;
@@ -39,7 +85,7 @@
             margin-right: 50px;
         }
         @include max-lg {
-            margin-right: 35px;
+            margin-right: 10px;
         }
         @include max-md {
             display: none;
@@ -60,12 +106,16 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
+        @include max-xl {
+            font-size: 14px;
+        }
         @include max-lg {
             font-size: 13px;
         }
     }
     &__btns {
         display: flex;
+        align-items: center;
     }
     &__button {
         padding: 10px 46px;
@@ -77,6 +127,13 @@
         @include max-lg {
             font-size: 13px;
         }
+        @include max-md {
+            max-width: 79px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         &_lang {
             color: #3996F3;
             font-family: 'Geometria';
@@ -84,17 +141,41 @@
             font-weight: 700;
             text-transform: uppercase;
             line-height: 18px;
-            background: #fff;
+            background: inherit;
             padding: 7px 10px !important;
             margin-right: 18px;
-            display: none;
+            display: flex;
+            align-items: center;
             @include max-md {
-                display: block;
+                width: 40px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #F5F6F7;
+                border-radius: 3px;
+            }
+            &:after {
+                content: "";
+                background-image: url(../images/lang_arrow.png);
+                width: 14px;
+                height: 7px;
+                display: flex;
+                background-size: contain;
+                margin-left: 12px;
+                @include max-md {
+                    display: none;
+                }
             }
         }
         @include max-md {
             padding: 7px 24px;
             margin-top: 0;
         }
+        
+    }
+    &__enter {
+        text-transform: capitalize;
+        display: none;
     }
 }

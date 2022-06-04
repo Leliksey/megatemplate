@@ -1,0 +1,113 @@
+.request {
+    background: linear-gradient(0deg, #637DFF, #637DFF), #667EFF;
+    padding: 63px 0 47px;
+    @include max-xxl {
+        padding: 50px 88px 35px;
+    }
+    @include max-lg {
+        padding: 50px 68px 35px;
+    }
+    @include max-md {
+        display: none;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        max-width: 860px;
+        @include max-xxl {
+            max-width: 660px;
+        }
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 35px;
+        color: #FFF;
+    }
+    &__form {
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__input_wrapper {
+        &_m-l {
+            margin-left: 21px;
+            @include max-lg {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__input_text {
+        color: #fff;
+    }
+    &__input {
+        margin-top: 14px;
+        padding: 17px 26px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 28px;
+        color: #000;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        &::placeholder {
+            color: #8A8A8A;
+        }
+        @include max-xxl {
+            max-width: 170px
+        }
+        @include max-xl {
+            padding: 17px 20px;
+            max-width: 156px
+        }
+        @include max-lg {
+            padding: 10px 20px;
+        }
+    }
+    &__button {
+        margin-left: 21px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 143%;
+        letter-spacing: -0.2px;
+        color: #3996F3;
+        border-radius: 6px;
+        padding: 19px 57px;
+        height: 62px;
+        background-color: #fff;
+        @include max-xxl {
+            max-width: 200px;
+            padding: 19px 27px;
+        }
+        @include max-lg {
+            margin-left: 10px;
+            padding: 0;
+            min-width: 150px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__agree {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFF;
+        margin-top: 13px;
+    }
+    &__right {
+        min-width: 200px;
+    }
+    &__img {
+        max-width: 495px;
+    }
+}

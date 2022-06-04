@@ -1,0 +1,119 @@
+.develop {
+    padding: 120px 0;
+    @include max-md {
+        padding: 60px 0;
+    }
+    &__content {
+    }
+    &__title {
+        font-weight: 700;
+        font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(24px + (72 - 24) * ((100vw - 320px) / (1920 - 320)));
+        letter-spacing: -1px;
+        color: #131313;
+        text-align: center;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        @include max-md {
+            flex-direction: column;
+            margin-top: 20px;
+            align-items: center;
+        }
+    }
+    &__block {
+        padding: 50px 30px;
+        border-top: 10px solid#3B3F50;
+        border-radius: 6px 6px 0px 0px;
+        background: #FFFDFD;
+        box-shadow: 0px 4px 31px rgba(45, 45, 45, 0.15);
+        max-width: 640px;
+        @include max-md {
+            padding: 42px 25px;
+            max-width: 450px;
+        }
+    }
+    &__block:last-child {
+        margin-left: 20px;
+        @include max-md {
+            margin-left: 0;
+            margin-top: 18px;
+        }
+    }
+    &__subtitle {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(20px + (29 - 20) * ((100vw - 320px) / (1920 - 320)));
+        color: #131313;
+    }
+    &__cost {
+        display: flex;
+        align-items: baseline;
+        margin-top: 14px;
+        position: relative;
+        @include max-md {
+            margin-top: 20px;
+        }
+    }
+    &__currency {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(17px + (21 - 17) * ((100vw - 320px) / (1920 - 320)));
+        color: #131313;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        @include max-lg {
+            top: 5px;
+        }
+    }
+    &__value {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: calc(40px + (48 - 40) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(42px + (59 - 42) * ((100vw - 320px) / (1920 - 320)));
+        color: #131313;
+        margin-left: 17px;
+    }
+    &__month {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(20px + (29 - 20) * ((100vw - 320px) / (1920 - 320)));
+        color: #131313;
+        opacity: 0.3;
+        margin-left: 21px;
+    }
+    &__text {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        line-height: 143%;
+        letter-spacing: -0.2px;
+        color: #7E868E;
+        margin-top: 17px;
+        @include max-md {
+            margin-top: 16px;
+        }
+        &_border {
+            padding-bottom: 21px;
+            margin-top: 31px;
+            border-bottom: 2px solid #F5F6F7;
+            @include max-md {
+                margin-top: 20px;
+                padding-bottom: 18px;
+            }
+        }
+        &_m-t {
+            margin-top: 23px;
+            @include max-md {
+                margin-top: 18px;
+            }
+        }
+    }
+}
